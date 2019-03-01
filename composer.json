@@ -1,0 +1,32 @@
+{
+    "name": "shaunclift/laravel-flex",
+    "description": "A dynamic data store solution for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "scliftas",
+            "email": "scliftas@gmail.com",
+            "homepage": "https://shaunclift.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shaunclift\\Flex\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Shaunclift\\Flex\\FlexServiceProvider"
+            ],
+            "aliases": {
+                "Flex": "Shaunclift\\Flex\\FlexFacade"
+            }
+        }
+    }
+}
